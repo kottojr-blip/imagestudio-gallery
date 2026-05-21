@@ -1,0 +1,590 @@
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Image Studio | Photography, Videography & Graphics Services</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Professional Photography, Videography and Graphic Design services in Tanzania. High-quality Shoots at affordable prices.">
+  <meta name="keywords" content="Photography Tanzania, Videography, Graphics, Image Studio, Events Photo">
+  <link rel="canonical" href="https://www.imagestudio.co.tz/" />
+  <meta name="robots" content="index, follow">
+  <script src="jquery-3.7.1.min.js" defer></script>
+  <script src="jquery-ui.min.js" defer></script>
+  <script src="wb.slideshow.min.js" defer></script>
+  <script src="magnificpopup/jquery.magnific-popup.min.js" defer></script>
+  <meta name="author" content="Image Studio">
+  <meta name="theme-color" content="#0b5ed7">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Image Studio | Photography, Videography & Graphics Services">
+  <meta property="og:description" content="Professional Photography, Videography & Graphic Design in Tanzania. Weddings, events, portraits & creative design.">
+  <meta property="og:url" content="https://www.imagestudio.co.tz/">
+  <meta property="og:image" content="https://www.imagestudio.co.tz/images/DSC_0279.JPG">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Image Studio | Photography, Videography & Graphics Services">
+  <meta name="twitter:description" content="Professional Photography, Videography & Graphic Design in Tanzania. Weddings, events, portraits & creative design.">
+  <meta name="twitter:image" content="https://www.imagestudio.co.tz/images/DSC_0279.JPG">
+
+  <!-- Schema.org JSON-LD (LocalBusiness) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Image Studio",
+    "url": "https://www.imagestudio.co.tz/",
+    <img src="images/l95djqhg7n.png" class="site-logo" alt="Image Studio" loading="lazy">
+    "image": "https://www.imagestudio.co.tz/images/DSC_0279.JPG",
+    "description": "Professional Photography, Videography & Graphic Design services in Tanzania.",
+    "telephone": "+255713665233",
+    "email": "info@imagestudio.co.tz",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Dar es Salaam",
+      "addressCountry": "TZ"
+    },
+    "sameAs": [
+      "https://www.facebook.com/geraldkandoya",
+      "https://www.instagram.com/photolink.2000",
+      "https://www.twitter.com/kandoyagerald"
+    ]
+  }
+  // Use a safe wrapper to ensure jQuery is available before using it
+(function waitForjQuery(fn, timeout = 5000) {
+    var start = Date.now();
+    function check() {
+        if (window.jQuery) return fn();
+        if (Date.now() - start > timeout) {
+            console.error('jQuery not loaded after ' + timeout + 'ms');
+            return;
+        }
+        setTimeout(check, 50);
+    }
+  </script>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+  <style>
+    :root{
+      --brand:#0b5ed7;
+      --accent:#0000CD;
+      --muted:#6c757d;
+      --wh: #ffffff;
+
+    }
+    body{ font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; line-height:1.5; color:#111;}
+    /* Header */
+    .site-logo{ max-width:170px; }
+    /* Hero */
+    .hero{
+      min-height:60vh;
+      background:linear-gradient(0deg, rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url('images/DSC_0279.JPG') center/cover no-repeat;
+      display:flex;
+      align-items:center;
+      color:var(--wh);
+    }
+    .hero .lead{ font-size:1.15rem; color:#f0f6ff; }
+
+    /* Cards */
+    .service-card{ border-radius:.75rem; transition:transform .25s ease, box-shadow .25s ease; }
+    .service-card:hover{ transform:translateY(-6px); box-shadow:0 10px 25px rgba(2,6,23,0.08); }
+
+
+.card {
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.18);
+}
+
+
+
+
+    /* WhatsApp floating button */
+    .whatsapp-btn{
+      position:fixed;
+      right:20px;
+      bottom:22px;
+      z-index:1080;
+      width:56px;
+      height:56px;
+      border-radius:50%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      background:#25D366;
+      color:#fff;
+      box-shadow:0 8px 20px rgba(37,211,102,0.18);
+      transition:transform .18s ease;
+    }
+    .whatsapp-btn:hover{ transform:translateY(-6px); text-decoration:none; color:#fff; }
+
+    /* Contact form */
+    .form-card{ border-radius:.75rem; padding:1.25rem; box-shadow:0 8px 20px rgba(2,6,23,0.06); }
+
+    /* Testimonial carousel */
+    .testimonial{ background:rgba(11,92,215,0.04); border-radius:.75rem; padding:1.25rem; }
+    .testimonial .author{ font-weight:600; color:var(--brand); margin-top:.75rem; }
+
+    /* Footer */
+    footer{ background:#04293a; color:#dbeefe; padding:2.5rem 0; }
+
+    /* Small helpers */
+    .sr-only{ position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); border:0; }
+
+    @media (max-width:767px){
+      .hero{ min-height:46vh; background-position: center 30%; }
+    }
+
+  </style>
+  <div id="SlideShow1" class="slideshow-container"></div>
+
+</head>
+<body>
+
+  <!-- NAVBAR (Bootstrap hamburger included) -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="/">
+        <img src="images/l95djqhg7n.png" alt="Image Studio" class="site-logo">
+        <span class="d-none d-md-inline"></span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+              aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="about-us.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="Services.html">Services</a></li>
+		  <li class="nav-item"><a class="nav-link" href="jarida.html">Company Journal</a></li>
+		  <li class="nav-item"><a class="nav-link" href="gallery.html">Client Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact</a></li>
+		   <li class="nav-item"><a class="nav-link" href="photoalbums.html">Photo Album</a></li>
+          <li class="nav-item ms-lg-3">
+            <a class="btn btn-outline-primary btn-sm d-flex align-items-center gap-2" href="https://instagram.com/photolink.2000" target="_blank" rel="noopener">
+              <i class="fab fa-instagram"></i> Instagram
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-7">
+          <h1 class="display-5 fw-bold">Capture Your Best Moments</h1>
+          <p class="lead">Professional Photography, Videography & Graphic Design <br> Weddings,all other events, portraits and creative content for individuals and businesses.</p>
+          <a href="Package.html" class="btn btn-primary btn-lg me-2">Book Now</a>
+          <a href="#services" class="btn btn-outline-light btn-lg">Our Services</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- SERVICES -->
+  <section id="services" class="py-5">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h2 class="h3">Our Services</h2>
+        <p class="text-muted">Professional, affordable, and reliable <br> from small shoots to large productions.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="service-card p-4 h-100">
+            <h5>Photography</h5>
+            <p class="text-muted mb-0">Event shoots, Portraits, Products, and Studio sessions.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-card p-4 h-100">
+            <h5>Videography</h5>
+            <p class="text-muted mb-0">Ceremony coverage, Highlight reels, and Promotional Videos.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-card p-4 h-100">
+            <h5>Graphics</h5>
+            <p class="text-muted mb-0">Design, Editing, Motion graphics and Printing-ready artwork.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS (Bootstrap Carousel) -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <h3 class="h5 mb-0">What clients say</h3>
+        <small class="text-muted">Trusted by clients across Tanzania</small>
+      </div>
+
+      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="6000">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="testimonial">
+              <p class="mb-0">"Image Studio shot our wedding and the photos were absolutely stunning — professional and timely."</p>
+              <div class="author">— Aisha M., Dar es Salaam</div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="testimonial">
+              <p class="mb-0">"Great team, excellent video quality and creative direction. Highly recommended."</p>
+              <div class="author">— John P., Arusha</div>
+            </div>
+          </div>
+<div class="carousel-item">
+            <div class="testimonial">
+              <p class="mb-0">"Excellent Photo quality and creative direction. Keep it up."</p>
+              <div class="author">— Aziza Bakari,Mrs. Manzese Sec School., Dar es Salaam</div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="testimonial">
+              <p class="mb-0">"Fast turnaround and very affordable packages for small businesses."</p>
+              <div class="author">— Fatuma K., Mwanza</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- CONTACT + FORM -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-6">
+          <h3>Contact Us</h3>
+          <p class="text-muted">Call or WhatsApp: <a href="tel:+255713665233">+255 713 665 233</a><br>Email: <a href="mailto:info@imagestudio.co.tz">kottojr@gmail.com</a></p>
+
+          <div class="mt-4">
+            <h6 class="mb-2">Visit</h6>
+            <address class="text-muted">P.O.Box 25232,<br>Ilala BO.,<br>Dar es Salaam, Tanzania</address>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="form-card">
+            <form id="contactForm" class="needs-validation" novalidate>
+              <!-- Honeypot to reduce spam (hidden) -->
+             <form id="contactForm">
+  <input name="name" class="form-control mb-2" placeholder="Your name" required>
+  <input name="email" type="email" class="form-control mb-2" placeholder="Email" required>
+  <input name="phone" class="form-control mb-2" placeholder="+255..." required>
+  <textarea name="message" class="form-control mb-2" placeholder="Message" required></textarea>
+
+  <button class="btn btn-primary w-100" type="submit">Send Message</button>
+</form>
+
+<div id="responseMsg" class="mt-3"></div>
+				</button>
+				<div class="alert alert-success mt-3 d-none" id="successMsg">
+				Message sent successfully!
+				</div>
+			<a href="https://wa.me/255713665233?text=Hello%20Image%20Studio,%20nahitaji%20huduma%20ya%20picha"
+                     class="btn btn-success mt-3" target="_blank">Chat on WhatsApp</a>
+              </div>
+
+              <div id="formAlert" class="mt-3" style="display:none;"></div>
+            </form>
+            <small class="text-muted d-block mt-2">We reply within 24 hours. By submitting you agree to be contacted.</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-md-4">
+          <img src="images/l95djqhg7n.png" alt="Image Studio" style="max-width:140px;">
+          <p class="mt-3 text-muted">Quality Photography, Videography & Graphics Services for all Occasions.</p>
+        </div>
+
+        <div class="col-md-4">
+          <h6>Quick Links</h6>
+          <ul class="list-unstyled">
+            <li><a href="about-us.html" class="text-decoration-none text-light">About</a></li>
+            <li><a href="Services.html" class="text-decoration-none text-light">Services</a></li>
+			<li><a href="https://Photocritique.net" class="text-decoration-none text-light">Photocritique</a></li>
+            <li><a href="contact-us.html" class="text-decoration-none text-light">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-4">
+          <h6>Contact</h6>
+          <p class="text-muted mb-0">Phone: <a href="tel:+255713665233" class="text-decoration-none text-light">+255 713 665 233</a></p>
+          <p class="text-muted">Email: <a href="mailto:kottojr@gmail.com" class="text-decoration-none text-light">kottojr@gmail.com</a></p>
+        </div>
+      </div>
+
+      <div class="text-center mt-4 small">© 2026 Image Studio — All Rights Reserved</div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a aria-label="Chat on WhatsApp" class="whatsapp-btn" href="https://wa.me/255713665233?text=Habari%20Image%20Studio%2C%20nahitaji%20huduma%20zenu" target="_blank" rel="noopener">
+    <i class="fab fa-whatsapp fa-lg"></i>
+  </a>
+
+  <!-- Bootstrap JS bundle (includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+  // -----------------------
+  // Contact form (front-end)
+  // -----------------------
+  (function(){
+    const form = document.getElementById('contactForm');
+    const submitBtn = document.getElementById('submitBtn');
+    const formAlert = document.getElementById('formAlert');
+
+    // Replace this with your Formspree endpoint or backend endpoint.
+    // Example Formspree endpoint: "https://formspree.io/f/yourFormId"
+    const FORM_ACTION = "https://formspree.io/f/{your-id}";
+
+    // Helper to show message
+    function showMessage(type, text){
+      formAlert.style.display = 'block';
+      formAlert.className = 'alert';
+      if(type === 'success') formAlert.classList.add('alert-success');
+      else formAlert.classList.add('alert-danger');
+      formAlert.textContent = text;
+    }
+
+    // Bootstrap validation + AJAX submit
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      // Reset alert
+      formAlert.style.display = 'none';
+      // Check honeypot
+      const honeypot = form.querySelector('input[name="_honeypot"]');
+      if(honeypot && honeypot.value){
+        // suspected bot
+        return;
+      }
+
+      // Bootstrap validation
+      if(!form.checkValidity()){
+        form.classList.add('was-validated');
+        return;
+      }
+
+      // Disable button
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = 'Sending...';
+
+      // Prepare payload
+      const data = {
+        name: form.name.value.trim(),
+        email: form.email.value.trim(),
+        phone: form.phone.value.trim(),
+        message: form.message.value.trim(),
+        source: window.location.href
+      };
+
+      // POST to endpoint (Formspree style expects form-encoded or JSON)
+      fetch(FORM_ACTION, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify(data)
+      })
+      .then(async res => {
+        // Formspree returns 200/201 on success
+        if(res.ok){
+          showMessage('success', 'Thank you — your message was sent. We will contact you soon.');
+          form.reset();
+          form.classList.remove('was-validated');
+        } else {
+          // try to parse error
+          let errText = 'Sorry, something went wrong. Please try again or contact us by phone.';
+          try {
+            const json = await res.json();
+            if(json && json.error) errText = json.error;
+          } catch(e){}
+          showMessage('error', errText);
+        }
+      })
+      .catch(err => {
+        console.error(err);
+        showMessage('error', 'Network error — please check your connection and try again.');
+      })
+      .finally(() => {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = 'Send Message';
+      });
+    }, false);
+  })();
+
+  // -----------------------
+  // Accessibility: reduce carousel auto-play for reduced-motion preference
+  // -----------------------
+  (function(){
+    const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)');
+    if(prefersReduced.matches){
+      const carouselEl = document.getElementById('testimonialCarousel');
+      if(carouselEl){
+        const carousel = bootstrap.Carousel.getInstance(carouselEl);
+        if(carousel) carousel.pause();
+      }
+    }
+  })();
+
+
+
+  </script>
+  <script>
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  const form = this;
+  const alertBox = document.getElementById("formAlert");
+  const btn = document.getElementById("submitBtn");
+
+  if (!form.checkValidity()) {
+    form.classList.add("was-validated");
+    return;
+  }
+
+  btn.disabled = true;
+  btn.innerText = "Sending...";
+
+  const formData = new FormData(form);
+
+  fetch("send_message.php", {
+    method: "POST",
+    body: formData
+  })
+  .then(res => res.text())
+  .then(data => {
+    alertBox.style.display = "block";
+    alertBox.className = "alert alert-success";
+    alertBox.innerText = "Message sent successfully!";
+    form.reset();
+    form.classList.remove("was-validated");
+  })
+  .catch(err => {
+    alertBox.style.display = "block";
+    alertBox.className = "alert alert-danger";
+    alertBox.innerText = "Error sending message.";
+  })
+  .finally(() => {
+    btn.disabled = false;
+    btn.innerText = "Send Message";
+  });
+});
+
+<script>
+(() => {
+  'use strict';
+
+  const form = document.getElementById('contactForm');
+
+  form.addEventListener('submit', event => {
+    if (!form.checkValidity()) {
+      event.preventDefault();
+      event.stopPropagation();
+    }
+
+    form.classList.add('was-validated');
+  }, false);
+})();
+</script>
+
+
+<script>
+const form = document.getElementById("contactForm");
+const btnText = document.getElementById("btnText");
+
+form.addEventListener("submit", () => {
+  btnText.innerText = "Sending...";
+});
+</script>
+
+</script>
+<script>
+const form = document.getElementById("contactForm");
+const msg = document.getElementById("responseMsg");
+
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  const formData = new FormData(form);
+  const data = Object.fromEntries(formData.entries());
+
+  msg.innerHTML = "Sending...";
+
+  try {
+    const res = await fetch("/send", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(data)
+    });
+
+    const result = await res.json();
+
+    if (result.success) {
+      msg.innerHTML = "<div class='alert alert-success'>Message sent!</div>";
+
+      // WhatsApp redirect
+      window.open(
+        `https://wa.me/255713665233?text=Hello Image Studio, I just submitted a form.`,
+        "_blank"
+      );
+
+      form.reset();
+    } else {
+      msg.innerHTML = "<div class='alert alert-danger'>Failed to send.</div>";
+    }
+
+  } catch (err) {
+    msg.innerHTML = "<div class='alert alert-danger'>Error occurred.</div>";
+  }
+});
+</script>
+
+
+</body>
+</html>
