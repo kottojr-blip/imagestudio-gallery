@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Image Studio Gallery</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="hero">
+
+  <h1>IMAGE STUDIO</h1>
+
+  <p>Private Client Gallery</p>
+
+  <div class="login-box">
+
+    <input
+      type="text"
+      id="galleryCode"
+      placeholder="Enter Gallery Code"
+    >
+
+    <button onclick="loadGallery()">
+      Open Gallery
+    </button>
+
+    <p id="status"></p>
+
+  </div>
+
+</div>
+
+<section id="gallerySection">
+
+  <h2>Your Photos</h2>
+
+  <div id="galleryGrid"></div>
+
+</section>
+
+<script src="app.js"></script>
+
+</body>
+</html>
