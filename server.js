@@ -45,9 +45,9 @@ let galleries = {
     paid: true,
 
     images: [
-      "/uploads/IMG_5437.jpg"
-      "/uploads/IMG_5488.jpg"
-      "/uploads/IMG_5500.jpg"
+      "/uploads/IMG_5437.jpg",
+      "/uploads/IMG_5488.jpg",
+      "/uploads/IMG_5500.jpg",
 	  "/uploads/IMG_5513.jpg"
 	 
     ]
@@ -58,8 +58,8 @@ let galleries = {
     paid: false,
 
     images: [
-      "/uploads/sample4.jpg"
-	   "/uploads/IMG_5525.jpg"
+      "/uploads/sample4.jpg",
+	   "/uploads/IMG_5525.jpg",
 	 "/uploads/IMG_5526.jpg"
     ]
   }
